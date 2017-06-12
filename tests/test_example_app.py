@@ -61,7 +61,7 @@ def test_example_app(example_app, app):
     with app.test_request_context():
         cmd = 'curl http://0.0.0.0:5000/sse?channel=project-1 --max-time 5'
         p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-        time.sleep(1)
+        time.sleep(5)
         current_sse.publish(data='hello world', channel='project-1',
                             type_='edit', retry=123, id_=456)
         out, err = p.communicate()

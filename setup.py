@@ -40,7 +40,7 @@ tests_require = [
     'isort>=4.2.2',
     'mock>=1.3.0',
     'psycopg2>=2.6.1',
-    'pydocstyle>=1.0.0',
+    'pydocstyle>=2.0.0',
     'pytest-cache>=1.0',
     'pytest-cov>=1.8.0',
     'pytest-pep8>=1.0.6',
@@ -52,7 +52,7 @@ extras_require = {
         'invenio-deposit>=1.0.0a8',
     ],
     'docs': [
-        'Sphinx>=1.5.1',
+        'Sphinx>=1.6.2',
     ],
     'tests': tests_require,
 }
